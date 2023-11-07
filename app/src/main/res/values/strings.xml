@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GuessingGame</string>
+    <string name="main_welcome">Welcome to the High or Low guessing game!</string>
+    <string name="main_description">Guess right 5 times to win.</string>
+    <string name="main_name_prompt">Please enter your name:</string>
+    <string name="game_thinking">I\'m thinking of a number between 1 and 10</string>
+    <string name="game_higher_or_lower">Is it higher or lower than:</string>
+    <string name="congrats_topper">Congratulations</string>
+    <string name="congrats_you_won">You Won!</string>
+</resources>
