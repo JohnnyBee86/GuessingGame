@@ -10,7 +10,7 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="297dp"
-        android:layout_height="79dp"
+        android:layout_height="130dp"
         android:text="@string/game_thinking"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.127" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/given"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/game_higher_or_lower"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/given"
         app:layout_constraintVertical_bias="0.204" />
 
     <Button
@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.153" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/playerScore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/game_player_score"

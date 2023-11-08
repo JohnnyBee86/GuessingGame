@@ -5,7 +5,7 @@
     <string name="main_name_prompt">Please enter your name:</string>
     <string name="main_default_player">Player</string>
     <string name="main_play_button">Play</string>
-    <string name="game_thinking">I\'m thinking of a number between 1 and 10</string>
+    <string name="game_thinking">I\'m thinking of a number between 1 and 10.  Numbers are re-rolled after every guess.</string>
     <string name="game_higher_or_lower">Is it higher or lower than:</string>
     <string name="game_higher_button">Higher</string>
     <string name="game_lower_button">Lower</string>
