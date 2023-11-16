@@ -1,5 +1,5 @@
 # GuessingGame
-An Android high or low guessing game
+An Android high or low guessing game created and written by John Bartholomew
 - The game will ask players to guess if the number it's 'thinking' of is higher or lower than a 'given' number
 - Both numbers will be randomly generated for each guess between 1 and 10 (inclusive)
 - The 'given' number is re-rolled if it is the same as the 'thinking'
