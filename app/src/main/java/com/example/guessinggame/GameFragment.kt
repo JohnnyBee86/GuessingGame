@@ -83,9 +83,9 @@ class GameFragment : Fragment() {
     }
 
 
-    // Function to update the displayed score
+    // Function to update the displayed score, also adds in playerName
     private fun updateScore(newScore:Int) {
-        scoreDisplay.text = getString(R.string.game_player_score) + " " + newScore
+        scoreDisplay.text = playerName + "'s " + getString(R.string.game_player_score) + " " + newScore
     }
 
     // Function to create 'Thinking' and 'Given' numbers
