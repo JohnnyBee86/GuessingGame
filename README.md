@@ -1,6 +1,6 @@
 # GuessingGame
 An Android high or low guessing game created and written by [John Bartholomew](https://github.com/JohnnyBee86)
-- Players can choose to enter a name or use the default of 'Player' on the Welcome screen
+- Players enter a name on the Welcome screen (if a name is not entered, a 'toast' with instructions is shown)
 - Then the game asks players to guess if the number it's 'thinking' of is higher or lower than a 'given' number
 - Both numbers are randomly generated for each guess between 1 and 10 (inclusive)
 - The 'given' number is re-rolled if it is the same as the 'thinking' number
