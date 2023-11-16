@@ -21,3 +21,18 @@ An Android high or low guessing game
 
 - Implemented code to navigate from Welcome to Game fragment
 - Implemented and tested functional game code
+
+## Completed as of 16 Nov 23:
+- Implemented code to enable the New Player button on the Congrats fragment to navigate to the Welcome fragment
+- Implemented code to enable the Play Again button on the Congrats fragment to navigate to the Game fragment
+- Implemented SafeArgs
+- Implemented code on all fragments to send the player's name to necessary fragments i.e.:
+      Welcome fragment to Game fragment
+      Game fragment to Congrats fragment
+      Congrats fragment to Game fragment
+
+- Tested functionality of game, SafeArgs, and code placing player's name (at varying lengths) in TextViews
+
+- Final nav_graph:
+
+![FinalNavGraph](https://github.com/JohnnyBee86/GuessingGame/assets/130700641/0dd04d47-bbc9-4c54-aa31-45e8ee38c7a5)
