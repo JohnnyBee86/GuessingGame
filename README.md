@@ -1,11 +1,14 @@
 # GuessingGame
 An Android high or low guessing game created and written by [John Bartholomew](https://github.com/JohnnyBee86)
-- The game will ask players to guess if the number it's 'thinking' of is higher or lower than a 'given' number
-- Both numbers will be randomly generated for each guess between 1 and 10 (inclusive)
-- The 'given' number is re-rolled if it is the same as the 'thinking'
-- After 5 correct guesses the game will end
+- Players can choose to enter a name or use the default of 'Player' on the Welcome screen
+- Then the game asks players to guess if the number it's 'thinking' of is higher or lower than a 'given' number
+- Both numbers are randomly generated for each guess between 1 and 10 (inclusive)
+- The 'given' number is re-rolled if it is the same as the 'thinking' number
+- The player's score is updated with each correct guess
+- After 5 correct guesses the game ends
+- The game then goes to a Congratulations screen where they can choose to play again or return to the Welcome screen
 
-## Android features used include:
+## Android features used:
 - Fragments
 - Event Handling (on click listeners)
 - Navigation Achitecture
