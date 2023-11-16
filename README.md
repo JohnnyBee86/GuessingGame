@@ -5,22 +5,26 @@ An Android high or low guessing game
 - The 'given' number is re-rolled if it is the same as the 'thinking'
 - After 5 correct guesses the game will end
 
-## Android features used will include:
+## Android features used include:
 - Fragments
 - Event Handling (on click listeners)
 - Navigation Achitecture
 - Safe Args
+- Toasts
 
 ## Completed as of 7 Nov 23:
 - Initial project build
 - Created Welcome, Game, and Congrats fragments
-- Populated and Constrained project elements (i.e. Textviews, Text Input Area, and Buttons) for all fragments
+- Populated and Constrained project elements (i.e. TextViews, EditText, and Buttons) for all fragments
 - Created Nav Graph layout (see photo below) with the 'back' action on the Congrats fragment 'popping' to the Welcome fragment
 
 ![LayoutAndNavSetUp](https://github.com/JohnnyBee86/GuessingGame/assets/130700641/b66d629e-a1d6-46d9-a2c5-8bea368c1cd4)
 
-- Implemented code to navigate from Welcome to Game fragment
-- Implemented and tested functional game code
+- Implemented code to navigate from the Welcome to the Game fragment
+- Implemented and tested game code:
+     - Game code functional
+
+- Created README and filled out to match progress as of 7 Nov 23
 
 ## Completed as of 16 Nov 23:
 - Implemented code to enable the New Player button on the Congrats fragment to navigate to the Welcome fragment
@@ -31,8 +35,13 @@ An Android high or low guessing game
      - Game fragment to Congrats fragment
      - Congrats fragment to Game fragment
 
-- Tested functionality of game, SafeArgs, and code placing player's name (at varying lengths) in TextViews
+- Tested functionality of game, SafeArgs, and code placing player's name (at varying lengths):
+     - Upon testing, found an empty string was being allowed
+     - Implemented code to ensure the 'player name' string is not empty before prceeding
+     - Added a 'toast' to instruct the player that a name is required
 
 - Final nav_graph:
 
 ![FinalNavGraph](https://github.com/JohnnyBee86/GuessingGame/assets/130700641/0dd04d47-bbc9-4c54-aa31-45e8ee38c7a5)
+
+- Updated README to match progess as of 16 Nov 23
