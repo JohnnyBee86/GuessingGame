@@ -14,12 +14,24 @@
             android:id="@+id/action_gameFragment_to_congratsFragment"
             app:destination="@id/congratsFragment"
             app:popUpTo="@id/welcomeFragment" />
+        <argument
+            android:name="playerName"
+            app:argType="string"
+            android:defaultValue="Player" />
     </fragment>
     <fragment
         android:id="@+id/congratsFragment"
         android:name="com.example.guessinggame.CongratsFragment"
         android:label="fragment_congrats"
-        tools:layout="@layout/fragment_congrats" />
+        tools:layout="@layout/fragment_congrats" >
+        <argument
+            android:name="playerName"
+            app:argType="string"
+            android:defaultValue="Player" />
+        <action
+            android:id="@+id/action_congratsFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.example.guessinggame.WelcomeFragment"

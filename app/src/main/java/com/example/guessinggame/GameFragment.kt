@@ -7,15 +7,22 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.NavDirections
 import androidx.navigation.fragment.findNavController
 
 class GameFragment : Fragment() {
-    // Declare score variable
+    // Declare score variables and textviews
     private var currentScore = 0
     private var thinkingNumber = 0
     private var givenNumber = 0
     private lateinit var givenDisplay:TextView
     private lateinit var scoreDisplay:TextView
+
+    // Declare variables to hold playerName from safe args and delivery action
+    // Needs 'global scope' to be seen by 'function guess'
+    // However if assigned before onCreate the app will crash
+    private lateinit var playerName:String
+    private lateinit var action:NavDirections
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -24,7 +31,11 @@ class GameFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_game, container, false)
 
-        // assign textviews
+        // Assign playerName from safe args and delivery action
+        playerName = GameFragmentArgs.fromBundle(requireArguments()).playerName
+        action = GameFragmentDirections.actionGameFragmentToCongratsFragment(playerName)
+
+        // Assign textviews
         givenDisplay = view.findViewById(R.id.given)
         scoreDisplay = view.findViewById(R.id.playerScore)
 
@@ -51,8 +62,9 @@ class GameFragment : Fragment() {
     private fun guess(guess:Boolean){
         if (guess == correct()) {
             currentScore++
+            // check for win condition, if true navigate to CongratsFragment
             if (currentScore >= 5) {
-                findNavController().navigate(R.id.action_gameFragment_to_congratsFragment)
+                findNavController().navigate(action)
             }
             updateScore(currentScore)
             newNumber()

@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
 import androidx.navigation.findNavController
 
 class WelcomeFragment : Fragment() {
@@ -15,10 +16,17 @@ class WelcomeFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_welcome, container, false)
-        val playButton = view.findViewById<Button>(R.id.playBtn)
 
+        // Declare 'Play' button and variable to hold player name
+        val playButton = view.findViewById<Button>(R.id.playBtn)
+        val nameText = view.findViewById<EditText>(R.id.playerNameText)
+
+        // Assign function of 'Play' button
+        // Get player name and pass it to next GameFragment
         playButton.setOnClickListener{
-            view.findNavController().navigate(R.id.action_welcomeFragment_to_gameFragment)
+            val playerName = nameText.text.toString()
+            val action = WelcomeFragmentDirections.actionWelcomeFragmentToGameFragment(playerName)
+            view.findNavController().navigate(action)
         }
 
         return view
